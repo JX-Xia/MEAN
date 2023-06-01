@@ -66,7 +66,7 @@ def reqChunks(_chunks_str, _serverID):
         # client.bind(client_addr)
 
         # IP of the could server
-        client.connect(('120.77.174.93', 3008))
+        client.connect(('0.0.0.0', 3008))
         # print('Cloud connection sucess!')
     else:
         client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
