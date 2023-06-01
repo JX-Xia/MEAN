@@ -73,6 +73,7 @@ if __name__ == '__main__':
         # Start server
         server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         # server_IP = socket.gethostbyname(socket.gethostname())
+        # IP of the cloud server should be modified
         server_IP = '0.0.0.0'
         print('Start server ' + str(server_IP))
         server_addr = (server_IP, 3008)
