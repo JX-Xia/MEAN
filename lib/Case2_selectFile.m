@@ -341,8 +341,7 @@ for ii = 1:size(serverInfo,1)
                     % Remove the file from the partFilesLine list
                     partFilesLine(partFilesLine==selectID(I(1))) = [];
                     
-                    % 该文件存储到当前server的文件列表中：
-                    % 将选择文件的所有chunk记录下来
+                    % Record the selected files
                     selectChunk = fileInfo.chunk{selectID(I(1))};
                     Locb = selectChunk.chunkID;
 
