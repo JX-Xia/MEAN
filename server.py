@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# 服务器端
+# Server
 import socket
 import struct
 import os
@@ -10,9 +10,9 @@ import inspect
 import ctypes
 from multiprocessing import Process
 
-# chunk的存储路径
+# Path of chunks
 chunkpath = 'chunks/chunk'
-# 导入matlab的数据
+# Load results
 results = loadmat("results/results1_MEAN.mat")
 
 
@@ -99,7 +99,7 @@ if __name__ == '__main__':
     if args.start == 0
         for chunk_index in range(chunkSize.size):
             size = int(chunkSize[chunk_index, 0])
-            # 生成大小为size，文件序号为fileID的文件
+            # Gen simulation files
             chunkID = chunk_index + 1
             createfile(chunkpath + str(chunkID), size)
         print('Server h' + str(serverID) + '\'s chunks generated!')
@@ -120,6 +120,7 @@ if __name__ == '__main__':
         # Start
         server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         # server_IP = socket.gethostbyname(socket.gethostname())
+        # Note: IP of servers should be modified
         server_IP = '10.0.0.' + str(serverID)
         print('Start server ' + str(server_IP))
         server_addr = (server_IP, 3008)
