@@ -1,5 +1,6 @@
 function [IndexTable,serverInfo,totalHeat] = Compare_Random(fileInfo,uniChunk,serverInfo)
 % Naive: Randomly select files until the server is full
+# This is equivalent to the traditional deduplication storage system, which does not consider file popularity
 
 selectLines =[];
 fileSize = zeros(size(fileInfo,1),1);
