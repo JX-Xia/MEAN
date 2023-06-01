@@ -2,7 +2,7 @@
 
 #### We have released the main source code of MEAN and placed several out-of-the-box test examples for readers to comprehend, enhance, and advance MEAN towards practical applications.
 
-#### The files "test_Scenario1.m" and "test_Scenario2and3.m" are two test examples, which can calculate the placement strategy of edge servers based on the information in the "datasets" folder, and the results are output to the "results" folder. 
+#### The files "test_Scenario1.m" and "test_Scenario2and3.m" are two test examples, which can calculate the placement strategy of edge files based on the information in the "datasets" folder, and the results are output to the "results" folder. 
 
 #### To evaluate the calculation results, we have added an out-of-the-box test case that can evaluate the hit ratios of comparison methods. 
 #### To run the example, you need to run "test_Scenario2and3.m" first, and when you are done, you will find the output files in the results folder. 
